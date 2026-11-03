@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>사전등록 — ART BOOK FAIR LIM</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="registration-page">
+<header class="site-header"><a class="brand" href="index.html">LIM<span>．</span></a><nav class="main-nav"><a href="index.html#about">ABOUT</a><a href="index.html#program">PROGRAM</a><a href="index.html#artists">ARTISTS</a></nav><a class="header-apply" href="index.html">홈으로 <span>↗</span></a></header>
+<main class="registration-main"><a class="back-link" href="index.html">← 메인으로 돌아가기</a><div class="registration-heading"><p class="eyebrow">ART BOOK FAIR LIM 2026 · VISITOR REGISTRATION</p><h1>COME &<br>WANDER.</h1><p>책과 이야기가 기다리는 주말,<br>아트북페어 림에 방문할 준비를 해주세요.</p></div>
+<form class="registration-form" id="registrationForm">
+  <div class="form-field"><label for="visitorName">이름 *</label><input id="visitorName" name="name" type="text" placeholder="이름을 입력해 주세요" required></div>
+  <div class="form-field"><label for="visitorPhone">연락처 *</label><input id="visitorPhone" name="phone" type="tel" placeholder="010-0000-0000" pattern="[0-9\-]{9,13}" required></div>
+  <div class="form-field"><label for="visitDate">방문 날짜 *</label><select id="visitDate" name="date" required><option value="">날짜를 선택해 주세요</option><option>2월 7일 (토)</option><option>2월 8일 (일)</option></select></div>
+  <div class="form-field"><label for="visitorCount">방문 인원 *</label><select id="visitorCount" name="count" required><option value="">인원 선택</option><option>1명</option><option>2명</option><option>3명</option><option>4명</option><option>5명 이상</option></select></div>
+  <div class="form-field full" id="sessions"><fieldset><legend>관심 프로그램 (중복 선택 가능)</legend><div class="choice-row"><label><input type="checkbox" name="session" value="작가와의 만남"> 작가와의 만남</label><label><input type="checkbox" name="session" value="북토크"> 북토크</label><label><input type="checkbox" name="session" value="북 메이킹 워크숍"> 북 메이킹 워크숍</label><label><input type="checkbox" name="session" value="독립출판 마켓"> 독립출판 마켓</label></div></fieldset></div>
+  <div class="form-field full"><label for="message">남기고 싶은 말 (선택)</label><textarea id="message" name="message" placeholder="궁금한 점이나 요청사항을 적어주세요."></textarea></div>
+  <p class="form-note full">* 본 페이지는 웹페이지 제작 시연을 위한 가상 신청 페이지입니다. 입력한 정보는 저장되거나 전송되지 않습니다.</p>
+  <button class="form-submit" type="submit">사전등록 신청하기 ↗</button>
+  <div class="success-message" id="successMessage" role="status" aria-live="polite"></div>
+</form></main>
+<footer class="site-footer"><a class="brand" href="index.html">LIM<span>．</span></a><p>ART BOOK FAIR LIM 2026<br>종이숲 산책클럽</p><p>DEMO REGISTRATION PAGE</p></footer>
+<script src="js/main.js"></script></body></html>
